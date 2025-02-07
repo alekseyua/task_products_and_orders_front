@@ -1,0 +1,22 @@
+:root{
+    --bg-color: #ffffff;
+    --bg-page-color: #ffffff;
+    --bg-form-color: #f0f3f5;
+    --text-color: #2c3c44;
+    --color-shadow: #eceff1;
+    --active-color: #8bc34a;
+    --active-status: #cddc39;
+    --block-color: #cfd8dc;
+}
+
+.container {
+    // background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+

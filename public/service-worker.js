@@ -1,5 +1,5 @@
 const CACHE_NAME = "v1";
-const URLS_TO_CACHE = ["/", "/index.html", "/static/js/bundle.js"];
+const URLS_TO_CACHE = ["/"];
 
 // Устанавливаем Service Worker и кэшируем файлы
 self.addEventListener("install", (event) => {

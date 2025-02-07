@@ -1,15 +1,16 @@
 import { createBrowserRouter } from "react-router";
 import Layout from "../Pages/Layout/Layout";
-import ComingContainer from "../Pages/CapitalizeGoodz/CapitalizeGoodzContainer";
-import GroupsContainer from "../Pages/Groups/GroupsContainer";
-import ProductsContainer from "../Pages/Products/ProductsContainer";
-import UsersContainer from "../Pages/Users/UsersContainer";
-import SettingsContainer from "../Pages/Setting/SettingContainer";
+import { lazy } from "react";
+const ComingContainer = lazy(() => import( "../Pages/CapitalizeGoodz/CapitalizeGoodzContainer"));
+const GroupsContainer = lazy(() => import( "../Pages/Groups/GroupsContainer"));
+const ProductsContainer = lazy(() => import( "../Pages/Products/ProductsContainer"));
+const UsersContainer = lazy(() => import( "../Pages/Users/UsersContainer"));
+const SettingsContainer = lazy(() => import( "../Pages/Setting/SettingContainer"));
 
 let router = createBrowserRouter([
   {
     path: "/",
-    Component: Layout,
+    Component: Layout,    
     children: [
       {
         path: "/",
@@ -31,6 +32,10 @@ let router = createBrowserRouter([
         path: "/setting",
         Component: SettingsContainer,
       },
+      {
+        path: '*',
+        element: 'no match'
+      }
     ],
   },
 ]);

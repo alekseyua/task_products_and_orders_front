@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import TopMenuContainer from '../../Components/TopMenu/TopMenuContainer';
 import NavigationMenuContainer from '../../Components/NavigationMenu/NavigationMenuContainer';
 import styles from './styles/layout.module.scss';
-import ModalContainer from '../../Components/Modal/ModalContainer'
+import ModalContainer from '../../Components/Modal/ModalContainer';
 
 const Layout: React.FC = () => {
     return (

@@ -27,9 +27,10 @@ self.addEventListener("activate", (event) => {
 
 // Перехватываем запросы и загружаем из кэша
 self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
-  );
+  // отключил кеширование не обновляет ws
+  // event.respondWith(
+  //   caches.match(event.request).then((response) => {
+  //     return response || fetch(event.request);
+  //   })
+  // );
 });

@@ -1,11 +1,11 @@
 import React from 'react'
 
 interface ISocketCounter {
-      countComing: number;
+      count: number;
 }
-const SocketCounter: React.FC<ISocketCounter> = ({ countComing }: ISocketCounter) => {
+const SocketCounter: React.FC<ISocketCounter> = ({ count }: ISocketCounter) => {
   return (
-      <div>{countComing} screen</div>
+      <div>{count} screen</div>
   )
 }
 

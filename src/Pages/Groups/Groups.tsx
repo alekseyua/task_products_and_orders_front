@@ -87,7 +87,7 @@ const Groups: React.FC<IGroups> = ({ handleOrder, capitalizeGoodzList, handleDel
         <Col className='col-xs-8'>
           {!!!capitalizeGoodzList.length && <Row>Список пуст</Row>}
           {capitalizeGoodzList.filter(el => el.isActive).map((c, index) => (
-            <ListGroup className='border rounded capitalize__products-container'>
+            <ListGroup className='border rounded capitalize__products-container' key={index}>
               <span
                 onClick={handleCloseListProducts}
                 className='capitalize__products-container-close'

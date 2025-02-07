@@ -72,7 +72,7 @@ const CapitalizeGoodz: React.FC<ICapitalizeGoodz> = ({ capitalizeGoodzList, hand
                 <Col className='col-2'>
                   {
                     c.price.map((p, i) => (
-                      <Row className='justify-content-start'>{p.value} {p.symbol}</Row>
+                      <Row className='justify-content-start' key={i}>{p.value} {p.symbol}</Row>
                     ))
                   }
                 </Col>

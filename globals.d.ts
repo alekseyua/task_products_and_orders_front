@@ -4,3 +4,9 @@ declare module "*.svg" {
 }
 
 declare module "*.scss";
+
+declare global {
+  interface Window {
+    __WB_MANIFEST: any;
+  }
+}

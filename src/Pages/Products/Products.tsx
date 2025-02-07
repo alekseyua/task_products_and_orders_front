@@ -64,7 +64,7 @@ const Products: React.FC<IProduct> = ({ handleDeleteProduct, handleSelectTypePro
               <div className='product__products-table-price'>
                 {
                   p.price.map((price: any, i: number) => (
-                    <span className='justify-content-start'>{price.value} {price.symbol}</span>
+                    <span className='justify-content-start' key={i}>{price.value} {price.symbol}</span>
                   ))
                 }
               </div>

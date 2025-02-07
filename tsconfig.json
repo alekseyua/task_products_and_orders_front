@@ -23,6 +23,6 @@
         "globals.d.ts"
     ],
     "include": [
-        "src",
+        "src", "public/service-worker.js",
     ]
 }
